@@ -1,4 +1,3 @@
-//Filip Munkeby Te21b
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
 #include <Windowsx.h>
@@ -60,7 +59,7 @@ int WINAPI WinMain(_In_ HINSTANCE hi, _In_opt_ HINSTANCE hp, _In_ LPSTR lp, _In_
     UNREFERENCED_PARAMETER(hp);
     UNREFERENCED_PARAMETER(lp);
     if (!(doRegister(hi)) || !(initInstance(hi, n))) {
-        MessageBox(NULL, (LPCSTR)"Fel, Kan ej registrera eller skapa fönstret i windows",
+        MessageBox(NULL, (LPCSTR)"Fel, Kan ej registrera eller skapa fÃ¶nstret i windows",
             (LPCSTR)"ERROR", MB_ICONERROR | MB_OK);
         return 0;
     }
@@ -142,16 +141,16 @@ ATOM doRegister(HINSTANCE hi) {
 //---------------------------------------------------------------------------
 BOOL initInstance(HINSTANCE hInstance, int nCmdShow) {
     HWND hWnd = CreateWindowEx(
-        0,                  //Här kan man sätta olika variationsvärden för utseendet på fönstret
+        0,                  //HÃ¤r kan man sÃ¤tta olika variationsvÃ¤rden fÃ¶r utseendet pÃ¥ fÃ¶nstret
         ClsName,            //(Klassnamn) 
-        (LPCSTR)ClsName,    //Namnet på Fönstret
-        WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_BORDER, // Olika utseende som man kan ställa in
-        CW_USEDEFAULT,      // X position på fönstret
-        CW_USEDEFAULT,      // X position på fönstret
-        1200,      // Bredd på fönstret
-        1125,      // Höjd på fönstret
+        (LPCSTR)ClsName,    //Namnet pÃ¥ FÃ¶nstret
+        WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_BORDER, // Olika utseende som man kan stÃ¤lla in
+        CW_USEDEFAULT,      // X position pÃ¥ fÃ¶nstret
+        CW_USEDEFAULT,      // X position pÃ¥ fÃ¶nstret
+        1200,      // Bredd pÃ¥ fÃ¶nstret
+        1125,      // HÃ¶jd pÃ¥ fÃ¶nstret
         NULL,               //Hanterare till parent-window
-        NULL,               //Ingen meny (än)
+        NULL,               //Ingen meny (Ã¤n)
         hInstance,          //Programmets instance hanterare
         NULL                //Ingen Window Creation Data
     );
