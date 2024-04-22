@@ -1,5 +1,3 @@
-//Filip Munkeby Te21b
-
 #include "Connect4.h"
 #include <string>
 
@@ -57,7 +55,7 @@ void Connect4::reset()
 
 void Connect4::computer()
 {
-	// b‰ttre ‰n julius
+	// b√§ttre √§n julius
 	for (int i = 0; i < 7; i++) {
 		if (isWinningMove(i, 2)) {
 			click(i);
