@@ -1,4 +1,3 @@
-//Filip Munkeby Te21b
 #pragma once
 #include <vector>
 #include <fstream>
